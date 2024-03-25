@@ -62,7 +62,7 @@ const About = ()=>{
                     <FontAwesomeIcon icon={faReact} color='#5ED4F4'/>
                 </div>
                 <div className='face5'>
-                    <FontAwesomeIcon icon={faJsSquare} color='#E4D81D'/>
+                    <FontAwesomeIcon icon={faJsSquare} color='#EFD81D'/>
                 </div>
                 <div className='face6'>
                     <FontAwesomeIcon icon={faGitAlt} color='#EC4D28'/>

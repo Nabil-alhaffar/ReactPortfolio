@@ -54,17 +54,17 @@ const Contact= ()=> {
                 <p>
                     I am currently working on and interested in freelance opportunities,
                      especially projects that require creativity!
-                    However, please do not hesitate to reach out to me via the form below for any requests or questions!
+                    However, please do not hesitate to reach out to me via the form below if you have any requests or questions!
                 </p>
                 <div className="contact-form">
                     <form ref={refForm} onSubmit={sendEmail}>
 
                         <ul>
                             <li className="half">
-                                <input type="text" name="name" placeholder="name" required/>
+                                <input type="text" name="name" placeholder="Full Name" required/>
                             </li>
                             <li className="half">
-                                <input type="email" name="email" placeholder="email" required/>
+                                <input type="email" name="email" placeholder="Email" required/>
                             </li>
                             <li>
                                 <input placeholder= "Subject" type="text" name="subject" required />
@@ -83,17 +83,17 @@ const Contact= ()=> {
             </div>
         </div>
         <div className='info-map'>
-        Nabil alhaffar
+        Nabil Alhaffar
         <br/>
-        Los Angeles
+        S Lake St
         <br/>
-        422 S Lake St, 90057<br/>
+        Los Angeles, 90057<br/>
         California<br/>
         <span>nabil.alhaffar1@gmail.com</span>
         </div>
         <div className='map-wrap'>
-            <MapContainer center={[ 34.0522, -118.2437 ]} zoom ={13}>
-                <TileLayer url = "https://{s}.tile.openstreetmap.org/{z},{x},{y}.png" />
+            <MapContainer center={[ 34.0522, -118.2437 ]} zoom ={10}>
+                <TileLayer url = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                 <Marker position ={[34.0522, -118.2437 ]}>
                     <Popup>Nabil lives here, come over for a cup of coffee :- </Popup>
                 </Marker>
