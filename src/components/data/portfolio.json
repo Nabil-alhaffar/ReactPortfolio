@@ -1,0 +1,17 @@
+{
+    "portfolio": [
+        {
+            "cover": "/portfolio/1/one.png",
+            "title": "Knife Station",
+            "description" : "python, AI",
+            "url": "https://github.com/Nabil-alhaffar/Knife-Station"
+        },
+        {
+            "cover": "/portfolio/1/one.png",
+            "title": "Knife Station",
+            "description" : "python",
+            "url": "https://github.com/Nabil-alhaffar/Knife-Station"
+        }
+    ]
+    
+}
