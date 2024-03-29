@@ -87,14 +87,14 @@ const Contact= ()=> {
         <br/>
         S Lake St
         <br/>
-        Los Angeles, 90057<br/>
-        California<br/>
+        Los Angeles, CA<br/>
+        90057<br/>
         <span>nabil.alhaffar1@gmail.com</span>
         </div>
         <div className='map-wrap'>
-            <MapContainer center={[ 34.0522, -118.2437 ]} zoom ={10}>
+            <MapContainer center={[ 34.0622, -118.2742 ]} zoom ={12}>
                 <TileLayer url = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                <Marker position ={[34.0522, -118.2437 ]}>
+                <Marker position ={[34.0622, -118.2742 ]}>
                     <Popup>Nabil lives here, come over for a cup of coffee :- </Popup>
                 </Marker>
 

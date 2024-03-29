@@ -8,9 +8,38 @@
         },
         {
             "cover": "/portfolio/1/one.png",
-            "title": "Knife Station",
-            "description" : "python",
+            "title": "Inventory Management App",
+            "description" : "ASP.NET, C#, Restful API, XAMARIN",
             "url": "https://github.com/Nabil-alhaffar/Knife-Station"
+        },
+        {
+            "cover": "/portfolio/1/one.png",
+            "title": "Angular Portfolio Web App",
+            "description" : "Angular, TypeScript, NodeJs",
+            "url": "https://github.com/Nabil-alhaffar/AngularPortfolio"
+        },{
+            "cover": "/portfolio/1/one.png",
+            "title": "WalkAbout iOS App ",
+            "description" : "Swift",
+            "url": "https://github.com/Nabil-alhaffar/Walkabout"
+        }
+        ,{
+            "cover": "/portfolio/1/one.png",
+            "title": "Walabot",
+            "description" : "C/C++, Python, OpenCV",
+            "url": "https://github.com/Nabil-alhaffar/Knife-Station"
+        }
+        ,{
+            "cover": "/portfolio/1/one.png",
+            "title": "Color Based Toaster",
+            "description" : "python, OpenCV",
+            "url": "https://github.com/Nabil-alhaffar"
+        },
+        {
+            "cover": "/portfolio/1/one.png",
+            "title": "Smart Tea Brewer",
+            "description" : "python, C#, Tizen.NET, Xamarin",
+            "url": "https://github.com/Nabil-alhaffar/Smart-Tea-Brewer"
         }
     ]
     
