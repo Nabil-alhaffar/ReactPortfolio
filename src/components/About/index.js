@@ -35,17 +35,12 @@ const About = ()=>{
                     />
 
                 </h1>
-                <p>I'm a very dedicated full-stack developer currently looking for a role in
-                    a well established IT company. I specialize in mobile development and ASP.NET core, and I've expanded
-                    my skillset to include most advanced front-end technologies like Angular and React. 
-                </p>
                 <p>
-                    I'm quitely confident, naturally curious, and actively working on
-                    improving my skillset, and becoming a better problem solver, one problem at a time. 
-                </p>
+                As a dedicated full-stack developer, my primary focus lies in mobile development and ASP.NET Core, where I've cultivated a wealth of experience and expertise over the years. In addition to mastering these core technologies, I've honed my proficiency in advanced front-end frameworks like Angular and React, allowing me to deliver comprehensive solutions that seamlessly integrate across all layers of the software stack.                </p>
                 <p>
-                    My work ethic speaks for itself, and I always strive to be the best version of myself!
-                </p>
+                With a demeanor characterized by quiet confidence and an insatiable curiosity, I approach each challenge with a steadfast commitment to refining my problem-solving skills. This perpetual quest for improvement serves as the driving force behind my pursuit of innovative solutions, as I continuously seek out new methodologies and technologies to enhance my capabilities and deliver tangible results.                </p>
+                <p>
+                My reputation as a diligent and dedicated professional is built upon a foundation of unwavering commitment to excellence. With a strong work ethic as my guiding principle, I prioritize self-improvement and consistently push the boundaries of what's possible in my field. By embodying the ethos of continuous improvement in every aspect of my work, I not only strive to meet expectations but surpass them, driving both personal and professional growth in the process.                </p>
 
             </div>
         <div className='stage-cube-cont'>

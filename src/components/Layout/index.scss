@@ -36,7 +36,8 @@
 }
 .portfolio-page,
 .contact-page,
-.about-page{
+.about-page,
+.skills-page{
     
 
         h1{
@@ -77,7 +78,8 @@
             font-style: 13px;
             color: #fff;
             font-family: sans-serif;
-            font-weight: 300;
+            font-weight: 500;
+            font-size: 14px;
             min-width: fit-content;
             animation: pulse 1s;
 
@@ -118,7 +120,8 @@
         min-height: auto;
         &.about-page,
         &.contact-page, 
-        &.portfolio-page{
+        &.portfolio-page,
+        &.skills-page{
 
             .text-zone{
                 position: initial;
@@ -127,6 +130,7 @@
                 display: block;
                 padding: 20px;
                 box-sizing: border-box;
+                font-size: 24px;
             }
         }
     }

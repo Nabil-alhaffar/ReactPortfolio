@@ -52,9 +52,10 @@ const Contact= ()=> {
                     />
                 </h1>
                 <p>
-                    I am currently working on and interested in freelance opportunities,
-                     especially projects that require creativity!
-                    However, please do not hesitate to reach out to me via the form below if you have any requests or questions!
+                Currently, I am actively engaged in exploring freelance opportunities, particularly those that stimulate my creativity and offer avenues for innovative problem-solving. I am excited by the prospect of collaborating on projects that challenge conventional thinking and inspire fresh perspectives. 
+                </p>
+                <p>
+                Should you have any inquiries or project proposals, I warmly encourage you to utilize the contact form provided below. Your questions and requests are welcomed, and I am eager to explore how my skills and expertise can contribute to the success of your endeavors.
                 </p>
                 <div className="contact-form">
                     <form ref={refForm} onSubmit={sendEmail}>
