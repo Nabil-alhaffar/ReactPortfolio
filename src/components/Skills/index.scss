@@ -40,6 +40,22 @@
 .tagcloud--item:hover{
     color:#fdd700;
 }
+.flat-button{
+    color: #ffd700;
+    display: block;
+    background: 0 0;
+    font: 11px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid #ffd700;
+    float: right;
+    border-radius: 4px;
+    &:hover{
+        background: #ffd700;
+        color: #333;
+    }
+}
 @media screen and (max-width: 1200px) {
     .sphere-container{
         float: none;

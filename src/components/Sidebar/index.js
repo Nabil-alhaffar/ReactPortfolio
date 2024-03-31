@@ -49,7 +49,7 @@ const Sidebar = ()=> {
                rel = "noreferrer"
                href = "https://www.linkedin.com/in/nabil-alhaffar-05037b107/">
 
-               <FontAwesomeIcon icon = {faLinkedin} color= "#4d4d4e"/>
+               <FontAwesomeIcon icon = {faLinkedin} color= "#4d4d4e" className='anchor-icon'/>
             </a>
          </li>
          <li>
@@ -58,25 +58,25 @@ const Sidebar = ()=> {
                rel = "noreferrer"
                href = "https://github.com/Nabil-alhaffar">
 
-               <FontAwesomeIcon icon = {faGithub} color= "#4d4d4e"/>
+               <FontAwesomeIcon icon = {faGithub} color= "#4d4d4e" className='anchor-icon'/>
             </a>
          </li>
          <li>
             <a
                target='_blank'
                rel = "noreferrer"
-               href = "https://twitter.com/Nabeelalhaffar">
+               href = "https://twitter.com/nabil_haffar">
 
-               <FontAwesomeIcon icon = {faXTwitter} color= "#4d4d4e"/>
+               <FontAwesomeIcon icon = {faXTwitter} color= "#4d4d4e" className='anchor-icon'/>
             </a>
          </li>
          <li>
             <a
                target='_blank'
                rel = "noreferrer"
-               href = "https://instagram.com/Nabil-alhaffar">
+               href = "https://www.instagram.com/nabilalhaffar/">
 
-               <FontAwesomeIcon icon = {faInstagram} color= "#4d4d4e"/>
+               <FontAwesomeIcon icon = {faInstagram} color= "#4d4d4e" className='anchor-icon'/>
             </a>
          </li>
         </ul>

@@ -87,6 +87,7 @@
     }
   }
   
+  
 
   @media screen and (max-width: 1200px) {
     .stage-cube-cont{
@@ -96,4 +97,8 @@
       overflow: visible;
 
     }
+    .star{
+      display: none;
+    }
+
   }
