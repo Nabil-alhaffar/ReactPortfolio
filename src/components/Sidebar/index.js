@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faClose, faEnvelope, faGear, faHome,faSuitcase,faUser } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 import { useState } from 'react'
+import profilePic from '../../assets/images/portfolioPic.png'
 
 
 
@@ -14,7 +15,7 @@ const Sidebar = ()=> {
    return (
     <div className='nav-bar'>
          <Link className='logo' to='/' >
-            <img src={sideLogo} alt = "logo"/>
+            <img src={profilePic}  class="rounded-circle" alt = "logo"/>
             {/* {<img className='sub-logo' src={LogoSubtitle} alt = "Nabil" /> } */}
          </Link>  
          <nav className={showNav? 'mobile-show' : ''}>

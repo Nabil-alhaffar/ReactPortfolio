@@ -1,5 +1,5 @@
 .nav-bar {
-    background: #1f1414;
+    background: #181818;
     width: 65px;
     height: 100%;
     position: absolute;
@@ -14,11 +14,12 @@
       size: 3x;
   
       img {
-        display: block;
+        display: flex;
         margin: 8px auto;
-        width: 24px;
+        width: 100%;
+        clip-path: circle();
         height: auto;
-  
+        border-radius: 50;
         &.sub-logo {
           width: 50px;
         }
