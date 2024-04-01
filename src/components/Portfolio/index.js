@@ -42,7 +42,7 @@ const Portfolio = ()=> {
                                     <button
                                         className="btn"
                                         onClick={() => window.open(port.url)}
-                                    >View</button>
+                                    >View on Github</button>
                                 </div>
                             </div>
                         )

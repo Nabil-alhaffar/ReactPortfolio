@@ -52,6 +52,7 @@
 .portfolio-page,
 .contact-page,
 .about-page,
+.blog-page,
 .skills-page{
     
 
@@ -136,6 +137,7 @@
         &.about-page,
         &.contact-page, 
         &.portfolio-page,
+        &.blog-page
         &.skills-page{
 
             .text-zone{

@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import sideLogo from '../../assets/images/side-logo.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faClose, faEnvelope, faGear, faHome,faSuitcase,faUser } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faCamera, faCameraRetro, faClose, faEnvelope, faGear, faHome,faSuitcase,faUser } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 import { useState } from 'react'
 import profilePic from '../../assets/images/portfolioPic.png'
@@ -34,6 +34,10 @@ const Sidebar = ()=> {
          <NavLink exact ="true" activeclassname = "active" className="contact-link" to="/contact" onClick={()=> setShowNav(false)}
 >
             <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e'/>
+         </NavLink>
+         <NavLink exact ="true" activeclassname = "active" className="blog-link" to="/blog" onClick={()=> setShowNav(false)}
+>
+            <FontAwesomeIcon icon={faCamera} color='#4d4d4e'/>
          </NavLink>
          <FontAwesomeIcon 
             onClick={()=> setShowNav(false)}
