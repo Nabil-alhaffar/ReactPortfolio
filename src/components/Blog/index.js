@@ -77,7 +77,7 @@ const Blog = ()=> {
             <h1 className='page-title'>
                 <AnimatedLetters 
                 letterClass={letterClass}
-                strArray={"Photography Blog".split("")}
+                strArray={"Photography Gallery".split("")}
                 idx={15}
 
                 />

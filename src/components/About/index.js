@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 import Stars from '../Stars'
+import { Link } from 'react-router-dom'
 
 const About = ()=>{
 
@@ -41,7 +42,11 @@ const About = ()=>{
                 With a demeanor characterized by quiet confidence and an insatiable curiosity, I approach each challenge with a steadfast commitment to refining my problem-solving skills. This perpetual quest for improvement serves as the driving force behind my pursuit of innovative solutions, as I continuously seek out new methodologies and technologies to enhance my capabilities and deliver tangible results.                </p>
                 <p>
                 My reputation as a diligent and dedicated professional is built upon a foundation of unwavering commitment to excellence. With a strong work ethic as my guiding principle, I prioritize self-improvement and consistently push the boundaries of what's possible in my field. By embodying the ethos of continuous improvement in every aspect of my work, I not only strive to meet expectations but surpass them, driving both personal and professional growth in the process.                </p>
+                <p> 
+                 Outside of work, my interests span across various domains, reflecting my diverse personality. Bodybuilding has become more than just a hobby—it's a lifestyle that allows me to push my limits physically and mentally, striving for continuous improvement. Chess provides a different kind of challenge, requiring strategic thinking and foresight to outmaneuver opponents. I'm also an avid reader, finding solace and inspiration in books that teach genuine self-improvement and good habbit creation. Since moving to California, I've grown very fond of nature and photography, so I try seek out breathtaking views, hoping to capture moments of beauty and wonder where I can. 
+                 Feel free to explore my <Link className='ylink' color='#ffd700' to="/blog">gallery</Link> and enjoy some of the views I've captured! :)
 
+                </p>
             </div>
         <div className='stage-cube-cont'>
            
