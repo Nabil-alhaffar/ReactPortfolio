@@ -30,7 +30,7 @@ const Skills = ()=>{
     }, []);
 
     useEffect(()=>{
-      return()=> {
+    //   return()=> {
         const container = ".tagcloud"
         const texts = [
             "ASP.NET",
@@ -67,7 +67,7 @@ const Skills = ()=>{
             keep:true,
         };
         TagCloud(container,texts,options);
-      } ; 
+        
     }, []);
     return (
         <>
