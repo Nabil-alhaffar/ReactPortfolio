@@ -9,16 +9,19 @@
   
     .logo {
       display: block;
-      padding: 8px 0;
+      // padding: 8px 0;
       min-width: 65px;
       size: 3x;
   
       img {
         display: flex;
+        position: relative;
+        top: 0px;
         margin: 8px auto;
-        width: 80%;
+        width: 90%;
         clip-path: circle();
-        height: auto;
+        
+        // height: 80%;
         border-radius: 50;
         &.sub-logo {
           width: 50px;

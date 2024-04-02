@@ -1,3 +1,11 @@
+# Project Description: 
+
+This is a portfolio web application created with react.JS, HTML and scss.
+The app displays multiple layouts showcasing my experience, and telling you more about myself. The application uses Firebase to store portfolio and blog data dynamically, with a dashboard to manually at items upon need. 
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

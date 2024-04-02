@@ -93,13 +93,16 @@ h2{
     float: right;
     height: auto;
     animation: ease-in 1s 1.8 backwards;
-    animation-delay: 1s;
+    animation-delay: 3s;
     overflow: hidden;
 
 
 }
 
 @media screen and (max-width: 1200px) {
+    .pic{
+        display: none;
+    }
     .tags,
     .home-page h1::before, 
     .home-page h1::after{
