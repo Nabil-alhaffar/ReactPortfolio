@@ -4,6 +4,7 @@ import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
 // import Logo from './Logo';
 import Loader from 'react-loaders';
+import profilePic from '../../assets/images/portfolioPic.png'
 import './index.scss'
 const Home =()=>{
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -49,9 +50,13 @@ const Home =()=>{
             <AnimatedLetters letterClass={letterClass} strArray={jobArray}idx={22}/>
             </span>
             </h1>
-            <h2>.NET Expert/ Mobile Developer/ Inventor</h2>
+            <h2>.NET and Mobile Expert / Freelancer / Inventor</h2>
             <Link to="/contact" className='flat-button' >Contact Me</Link>
-            </div>    
+            <div className='image-container'>
+                <img className='pic' src={profilePic} clipPath='circle' alt='logo'></img>
+            </div>  
+            </div>
+              
             {/* <Logo/> */}
         </div>
         <Loader type='pacman' />

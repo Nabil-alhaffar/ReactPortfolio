@@ -1,5 +1,5 @@
 .home-page{
-
+    align-items: center;
     .text-zone{
         position: absolute;
         left: 10%;
@@ -56,7 +56,7 @@ h2{
     // color: #8d8d8d;
     margin-top: 20px;
     font-weight: 600;
-    font-size: 11px;
+    font-size: 14px;
     font-family: sans-serif;
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
@@ -78,6 +78,25 @@ h2{
         background: #ffd700;
         color: #333;
     }
+}
+
+.pic {
+    position: absolute;
+    width: 400px; /* Adjust the width of the image as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Apply a circular border radius */
+    display: block;
+    left: 600px;
+    top: 100px;
+    margin-left: 30px;
+
+    float: right;
+    height: auto;
+    animation: ease-in 1s 1.8 backwards;
+    animation-delay: 1s;
+    overflow: hidden;
+
+
 }
 
 @media screen and (max-width: 1200px) {
