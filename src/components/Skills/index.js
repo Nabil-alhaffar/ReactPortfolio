@@ -89,7 +89,7 @@ const Skills = ()=>{
                target='_blank'
                rel = "noreferrer"
                href = "https://www.linkedin.com/in/nabil-alhaffar-05037b107/"> linkedin</a> profile for more details, or otherwise feel free to download my resume for your convenience!</p>
-                <Link  className='flat-button' to={resume} target="_blank" download="Nabil Alhaffar Resume" >Download PDF Resume</Link>
+                <Link  className='flat-button' to={resume} target="_blank" download="Nabil Alhaffar Resume.pdf" >Download PDF Resume</Link>
 
             </div>
             <div className='sphere-container'>
