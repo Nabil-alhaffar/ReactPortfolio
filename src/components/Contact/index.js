@@ -88,9 +88,8 @@ const Contact= ()=> {
         <br/>
         S Lake St
         <br/>
-        Los Angeles, CA<br/>
-        90057<br/>
-        <span>nabil.alhaffar1@gmail.com</span>
+        Los Angeles, CA 90057<br/>
+        <span>Nabil.Alhaffar1@gmail.com</span>
         </div>
         <div className='map-wrap'>
             <MapContainer center={[ 34.0622, -118.2742 ]} zoom ={12}>
