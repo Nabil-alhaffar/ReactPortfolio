@@ -104,7 +104,19 @@ h2{
 
 @media screen and (max-width: 1200px) {
     .pic{
-        display: none;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            width: 80%;
+            // max-width: 20px;
+            float: none;
+            // width: 100%;
+            height: 400px;
+            margin: 0;
+            position: initial;
+            // display: block;
+            padding-left: 40px;
+            align-self: center;      
+            justify-self: center;  
     }
     .tags,
     .home-page h1::before, 
@@ -123,7 +135,7 @@ h2{
             float: none;
             display: block;
             margin: 20px auto 0 auto;
-            width: 125px;
+            width: fit-content;
 
         }
         .logo-container{

@@ -62,12 +62,57 @@
 
 }
 @media screen and (max-width: 1200px) {
+
+    
+
+    .container.skills-page{
+
+       
+        h1.page-title{
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 45px;
+        }
+        .text-zone{
+            position: initial;
+            width: 100%;
+            transform: none;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .flat-button{
+            float: none;
+            display: block;
+            margin: 20px auto 0 auto;
+            width: fit-content;
+
+        }
+    }
     .sphere-container{
         float: none;
         width: 100%;
         height: 400px;
         margin: 0;
+        position: initial;
+        // display: none;
 
+    }
+    
+    .text-sphere{
+        float: none;
+        width: 100%;
+        height: 400px;
+        margin: 0;
+        position: initial;
+        // display: none;
+    }
+    .tagcloud{
+        // display: none;
+        float: none;
+        width: 100%;
+        height: 400px;
+        margin: 0;
+        position: initial;
     }
     
     

@@ -98,15 +98,36 @@
   
 
   @media screen and (max-width: 1200px) {
+    .about-page{
+      
+      .text-zone{
+          position: initial;
+          width: 100%;
+          transform: none;
+          padding: 10px;
+          box-sizing: border-box;
+      }
+      .flat-button{
+          float: none;
+          display: block;
+          margin: 20px auto 0 auto;
+          width: 125px;
+
+      }
+  }
     .stage-cube-cont{
       position: initial;
       width: 100%;
       height: 0%;
       overflow: visible;
-
+      padding-bottom: 0;
+      
     }
     .star{
       display: none;
+      overflow: hidden;
     }
+    
+    
 
   }
