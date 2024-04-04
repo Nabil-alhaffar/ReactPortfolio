@@ -25,6 +25,8 @@
         border-radius: 50;
         &.sub-logo {
           width: 50px;
+          clip-path: none;
+          height: 20px;
         }
       }
     }

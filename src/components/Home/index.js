@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import LogoTitle from '../../assets/images/logo-s.png';
+import ALogo from '../../assets/images/logo-a.png'
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
 // import Logo from './Logo';
@@ -9,6 +10,7 @@ import './index.scss'
 const Home =()=>{
     const [letterClass, setLetterClass] = useState('text-animate')
     const nameArray = ['a','b','i','l']
+    const lastNameArray = ['l','h','a','f','f','a','r',',']
     const jobArray = ['F','u','l','l', '-', 's','t','a','c','k', ' ', 'D','e','v','e','l','o','p','e','r','.']
     
     // useEffect(()=> {
@@ -44,6 +46,11 @@ const Home =()=>{
             <AnimatedLetters letterClass={letterClass} 
             strArray={nameArray}
             idx={17}
+            />
+            <img src= {ALogo}alt='A'/>
+            <AnimatedLetters letterClass={letterClass}
+            strArray={lastNameArray}
+            idx={22}
             />
             <br/>
             <span>

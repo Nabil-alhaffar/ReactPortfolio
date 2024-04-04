@@ -3,10 +3,7 @@
     color: #fdd700;
     font-weight: 900;
 }
-.skills-page{
-    position: absolute;
-    
-}
+
 .sphere-container{
     width: 50%;
     float: right;
@@ -31,7 +28,7 @@
     // top:0;
     // left: 0;
     font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 0.0625em;
     font-size: 1.3em;
 
@@ -90,9 +87,10 @@
     }
     .sphere-container{
         float: none;
-        width: 100%;
+        width: 65%;
         height: 400px;
         margin: 0;
+        overflow: visible;
         position: initial;
         // display: none;
 
