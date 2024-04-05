@@ -153,8 +153,30 @@
                 display: block;
                 padding: 20px;
                 box-sizing: border-box;
-                font-size: 24px;
+                font-size: 20px;
             }
+        }
+    }
+}
+@media screen and (max-width: 800px){
+.portfolio-page,
+.contact-page,
+.about-page,
+.blog-page,
+.skills-page{
+    
+
+        h1{
+            font-size: 40px;
+
+            
+            }
+        
+
+        p{
+            font-size: 10px;
+
+           
         }
     }
 }
