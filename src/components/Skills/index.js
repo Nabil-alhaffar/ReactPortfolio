@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import Loader from 'react-loaders'
 import { Color } from 'three'
+import Stars from '../Stars'
 const Skills = ()=>{
     // const downloadFile = () => {
     //     const link = this.renderer.createElement('a');
@@ -40,7 +41,7 @@ const Skills = ()=>{
             "React",
             "C/C++",
             "OAuth",
-            "Microsoft Azure",
+            "Azure",
             "AWS",
             "JWT",
             "Python",
@@ -93,11 +94,14 @@ const Skills = ()=>{
                 <Link  className='flat-button' to={resume} target="_blank" download="Nabil Alhaffar Resume" >Download PDF Resume</Link>
 
             </div>
+            
             <div className='sphere-container'>
              <div className='text-sphere'>
                  <span className='tagcloud'></span>
              </div>
+             
         </div>
+        
         </div>
         <Loader type='pacman' />
 
