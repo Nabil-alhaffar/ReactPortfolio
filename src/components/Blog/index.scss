@@ -229,3 +229,14 @@
         
     }
 }
+@media screen and (max-width: 800px) {
+    .container.blog-page{
+        
+
+        h1.page-title{
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 40px;
+        }
+    }
+}
