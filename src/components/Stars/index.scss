@@ -6,3 +6,9 @@
     background-color: #ffffff;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); // Add a shadow effect
   }
+  @media screen and (max-width:800px) {
+    .star{
+      display: none;
+    }
+    
+  }

@@ -87,7 +87,7 @@
     }
     .sphere-container{
         float: none;
-        width: 65%;
+        width: 100%;
         height: 400px;
         margin: 0;
         overflow: visible;
@@ -119,12 +119,12 @@
 
     .sphere-container{
         float: none;
-        width: 50%;
+        width: 30%;
         height: 400px;
         margin: 0;
         overflow: visible;
         position: initial;
-        // display: none;
+         display: none;
 
     }
     
@@ -134,10 +134,10 @@
         height: 400px;
         margin: 0;
         position: initial;
-        // display: none;
+         display: none;
     }
     .tagcloud{
-        // display: none;
+         display: none;
         float: none;
         width: 100%;
         height: 400px;

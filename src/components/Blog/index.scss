@@ -238,5 +238,23 @@
             margin-top: 20px;
             font-size: 40px;
         }
+        .image-box{
+            height: 200px;
+            max-width: calc(50% - 10px);
+            .description{
+                font-size: 9px;
+                width: fit-content;
+                font-weight: 900;
+                color: #ffd700;
+                padding-left: 0;
+                padding-bottom: 2px;
+            }
+            
+            .title{
+                display: none;
+            }
+            
+        }
     }
+
 }
