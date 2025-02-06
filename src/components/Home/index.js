@@ -9,8 +9,8 @@ import profilePic from '../../assets/images/portfolioPic.png'
 import './index.scss'
 const Home =()=>{
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = ['a','b','i','l']
-    const lastNameArray = ['l','h','a','f','f','a','r',',']
+    const nameArray = ['N','a','b','i','l']
+    const lastNameArray = ['A','l','h','a','f','f','a','r',',']
     const jobArray = ['F','u','l','l', '-', 's','t','a','c','k', ' ', 'D','e','v','e','l','o','p','e','r','.']
     
     // useEffect(()=> {
@@ -42,12 +42,12 @@ const Home =()=>{
             <span className={`${letterClass} _14`}>'</span>
             <span className={`${letterClass} _15`}>m</span>
 
-            <img src={LogoTitle} alt="developer"/> 
+            {/* <img src={LogoTitle} alt="developer"/>  */}
             <AnimatedLetters letterClass={letterClass} 
             strArray={nameArray}
             idx={17}
             />
-            <img src= {ALogo}alt='A'/>
+            {/* <img src= {ALogo}alt='A'/> */}
             <AnimatedLetters letterClass={letterClass}
             strArray={lastNameArray}
             idx={22}
