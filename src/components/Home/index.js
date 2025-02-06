@@ -9,7 +9,7 @@ import profilePic from '../../assets/images/portfolioPic.png'
 import './index.scss'
 const Home =()=>{
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = ['N','a','b','i','l']
+    const nameArray = ['N','a','b','i','l',' ']
     const lastNameArray = ['A','l','h','a','f','f','a','r',',']
     const jobArray = ['F','u','l','l', '-', 's','t','a','c','k', ' ', 'D','e','v','e','l','o','p','e','r','.']
     
@@ -40,7 +40,7 @@ const Home =()=>{
             <br/>
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'</span>
-            <span className={`${letterClass} _15`}>m</span>
+            <span className={`${letterClass} _15`}>m </span>
 
             {/* <img src={LogoTitle} alt="developer"/>  */}
             <AnimatedLetters letterClass={letterClass} 
