@@ -36,15 +36,61 @@ const About = ()=>{
                     />
 
                 </h1>
+                <p>
+  My journey began in Damascus, Syria, where I grew up in a close-knit family. 
+  As a child, I was always <span className='yspan'>curious</span>, constantly asking questions and exploring new interests. 
+  I loved building things, whether it was assembling small gadgets or experimenting with ideas, 
+  which sparked my <span className='yspan'>fascination with technology</span>. 
+  Unfortunately, the outbreak of war made it unsafe to stay, and my family made the difficult decision to move. 
+  We relocated to Amman, Jordan, where I completed my high school education and adapted to a new environment.
+</p>
+
+<p>
+  A year later, I earned a scholarship to study at the University of Evansville in Indiana. 
+  Supporting myself through college meant working in sales, where I built a strong side career in telecom, 
+  earning a district manager role at a Metro by T-Mobile© franchise and later becoming a repeat 
+  <span className='yspan'>top nationwide salesperson</span> at Charter Communications, Spectrum. 
+  Simultaneously, I had the opportunity to co-op at GE Appliances in the Emerging Technologies and Innovations Department, 
+  where I worked on creating <span className='yspan'>cutting-edge prototypes</span> from scratch, 
+  earned <a className="ylink" href='https://patents.justia.com/inventor/nabil-alhaffar' target='_blank'>four patents</a>, 
+  and gained hands-on experience in AI by training multiple models and working with real-world data. 
+  Most importantly, I had a chance to work and learn with a great mentor and a wonderful set of colleagues who became family.
+</p>
+
+<p>
+  Upon graduating, I continued working in sales while transitioning into 
+  <span className='yspan'> software freelancing</span>, which has been my primary focus for a few years now 
+  and provided me with an opportunity to be flexible while I fulfilled my other obligations. 
+  Along the journey, I also had to navigate the complex process of seeking asylum and permanent residence in the U.S., 
+  which, though challenging, reinforced my <span className='yspan'>resilience</span> and 
+  <span className='yspan'> determination</span> to carve out my own path.
+</p>
+
+
+<p> 
+  At the core of who I am, my values are centered around 
+  <span className='yspan'> honesty</span>, <span className='yspan'>integrity</span>, 
+  and a commitment to <span className='yspan'>giving my best</span> to those who choose to place trust in me. 
+  Bodybuilding has become a lifestyle that teaches me discipline and resilience, 
+  while chess sharpens my strategic thinking. 
+  Reading fuels my love for self-improvement and habit-building, 
+  and options trading ties it all together, challenging me to apply 
+  <span className='yspan'> discipline</span>, <span className='yspan'>strategy</span>, 
+  and <span className='yspan'>continuous learning</span>. 
+  Since moving to California, I’ve developed a passion for nature and photography, 
+  constantly seeking breathtaking landscapes to capture moments of beauty and wonder.
+</p>  
+
+<p>
+  Feel free to explore my <Link className='ylink' color='#ffd700' to="/blog"> gallery</Link> and check out some of the views I've captured. 
+  Don't go full pro on me—I'm still a rookie!
+</p>
+
                 {/* <p>
-                As a dedicated <span  className='yspan'>full-stack developer</span>, my primary focus lies in <span className='yspan'>mobile development</span>  and <span className='yspan'>ASP.NET Core</span> , where I've cultivated a decent amount of experience and expertise over the years. In addition to mastering these core technologies, I've honed my proficiency in advanced <span className='yspan'>front-end</span>  frameworks like <span className='yspan'>Angular</span> and <span className='yspan'>React</span>, allowing me to deliver comprehensive solutions that seamlessly integrate across all layers of the software stack.                </p> */}
-                <p>
-                With a demeanor characterized by <span className='yspan'>quiet confidence</span> and an <span className='yspan'>insatiable curiosity</span>, I approach each challenge with a resolute commitment to refining my problem-solving skills. This perpetual quest for improvement serves as the driving force behind my pursuit of innovative solutions, as I continuously seek out new methodologies and technologies to improve my skillset and deliver tangible results.                </p>
-                <p>
-                With a <span className='yspan'>strong work ethic</span> as my guiding principle, I prioritize self-improvement and consistently push the boundaries of what's possible in my field. By embodying the ethos of continuous improvement in every aspect of my work, I not only strive to meet expectations but surpass them, driving both personal and professional growth in the process.                </p>
-                <p> 
-                 Outside of work, my interests span across various domains, reflecting my <span className='yspan'>diverse</span> personality. Bodybuilding has become more than just a hobby—it's a lifestyle that allows me to push my limits physically and mentally everyday. Chess provides a different kind of challenge, requiring strategic thinking and foresight to outmaneuver opponents. I'm also an avid reader, finding solace and inspiration in books that teach genuine self-improvement and good habit creation. Since moving to California, I've grown very fond of nature and photography, so I try seek out breathtaking views, hoping to capture moments of beauty and wonder where I can. </p>
-                 <p>Feel free to explore my <Link className='ylink' color='#ffd700' to="/blog">gallery</Link> and check out some of the views I've captured. Don't go full pro on me—I'm still a rookie!</p>
+                With a demeanor defined by quiet confidence and an insatiable curiosity, I approach every challenge with a problem-solving mindset, always striving to refine my skills and explore new technologies. My commitment to continuous improvement isn't just about professional growth—it’s a mindset that shapes everything I do. Whether in work or personal pursuits, I push boundaries, seek innovation, and aim to make a tangible impact.      </p> */}
+                {/* <p>
+                With a <span className='yspan'>strong work ethic</span> as my guiding principle, I prioritize self-improvement and consistently push the boundaries of what's possible in my field. By embodying the ethos of continuous improvement in every aspect of my work, I not only strive to meet expectations but surpass them, driving both personal and professional growth in the process.                </p> */}
+               
             </div>
         <div className='stage-cube-cont'>
            

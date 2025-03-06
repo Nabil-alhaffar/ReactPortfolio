@@ -37,7 +37,7 @@ const Home =()=>{
             <h1>
             <span className={letterClass}>H</span>
             <span className={`${letterClass} _12`}>i</span>
-            <span className={`${letterClass} _13`}>,</span>
+            <span className={`${letterClass} _13`}>!</span>
 
             <br/>
             <span className={`${letterClass} _14`}>I</span>

@@ -15,7 +15,7 @@ const Sidebar = ()=> {
    return (
     <div className='nav-bar'>
          <Link className='logo' to='/' >
-            <img src={sidePic}  class="imgp" alt = "logo"/>
+            <img src={profilePic}  class="imgp" alt = "logo"/>
             {/* <img className='sub-logo' src={LogoSubtitle} alt = "Nabil" />  */}
          </Link>  
          <nav className={showNav? 'mobile-show' : ''}>
