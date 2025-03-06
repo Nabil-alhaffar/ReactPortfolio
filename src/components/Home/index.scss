@@ -193,8 +193,8 @@ h2{
 }
 @media screen and (max-width: 800px) {
     .pic{
-            width: 60%;
-           height: 60%;
+         display: none;
+           animation: none
     }
     
     .home-page{
