@@ -49,7 +49,7 @@ const About = ()=>{
   A year later, I earned a scholarship to study at the University of Evansville in Indiana. 
   Supporting myself through college meant working in sales, where I built a strong side career in telecom, 
   earning a district manager role at a Metro by T-Mobile© franchise and later becoming a repeat 
-  <span className='yspan'>top nationwide salesperson</span> at Charter Communications, Spectrum. 
+  <span className='yspan'> top nationwide salesperson</span> at Charter Communications, Spectrum. 
   Simultaneously, I had the opportunity to co-op at GE Appliances in the Emerging Technologies and Innovations Department, 
   where I worked on creating <span className='yspan'>cutting-edge prototypes</span> from scratch, 
   earned <a className="ylink" href='https://patents.justia.com/inventor/nabil-alhaffar' target='_blank'>four patents</a>, 
