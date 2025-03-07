@@ -51,7 +51,7 @@
             position: absolute;
             width: 100%;
             z-index: 3;
-            padding: 10px 20px;
+            padding: 10px 10px;
             transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
             background: linear-gradient(
                 180deg,
@@ -67,7 +67,9 @@
             color: #ffd700;
             font-size: 24px;
             font-weight: 500;
-             line-height: 1px;
+            line-height: 24px;
+            margin-right: 13px;
+
         }
 
         .description {
@@ -75,6 +77,8 @@
             margin-bottom: 5px;
             color: #fff;
             font-weight: 700;
+            margin-right: 13px;
+
         }
 
         .btn {
@@ -165,7 +169,7 @@
         position: absolute;
         top: 25px;
         margin-top: 10px; // Adjust margin for close button
-  margin-right: 10px;
+        margin-right: 10px;
         right: 30px;
         cursor: pointer;
         font-size: 24px;
@@ -197,6 +201,8 @@
                 color: #fff;
                 padding-left: 0;
                 padding-bottom: 2px;
+                margin-right: 13px;
+
             }
             .content{
                 padding: 2px 6px;
@@ -207,6 +213,8 @@
                 font-weight: bolder;
                 color: #ffd700;  
                 width: fit-content;
+                margin-right: 13px;
+
         
 
 
@@ -245,13 +253,13 @@
                 font-size: 9px;
                 width: fit-content;
                 font-weight: 900;
-                color: #ffd700;
+                // color: #fff;
                 padding-left: 0;
                 padding-bottom: 2px;
             }
             
             .title{
-                display: none;
+                line-height: 16px;                
             }
             
         }

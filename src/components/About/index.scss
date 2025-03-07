@@ -23,11 +23,14 @@
     margin-left: 0;
     position: absolute;
     right: 0;
-    overflow: hidden;
+    overflow: visible;
     
   }
   .stars{
+    height: 120%;
+    top: 25%;
     width: 100%;
+    z-index: 2; /* Ensure it's above the cube */
     position: absolute;
 
   }
@@ -130,10 +133,10 @@
       height: 0%;
       overflow: visible;
       padding-bottom: 0;
-      
     }
     .stars{
       display: none;
+      width: 100%;
       overflow: hidden;
     }
     
