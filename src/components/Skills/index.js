@@ -7,6 +7,8 @@ import AnimatedLetters from '../AnimatedLetters'
 import Loader from 'react-loaders'
 import { Color } from 'three'
 import Stars from '../Stars'
+import { PuffLoader } from "react-spinners";
+
 const Skills = ()=>{
     // const downloadFile = () => {
     //     const link = this.renderer.createElement('a');
@@ -102,7 +104,9 @@ const Skills = ()=>{
         </div>
         
         </div>
-        <Loader type='pacman' />
+        {/* <PuffLoader color="#FFD700" size={80} /> */}
+
+        <Loader type="pacman" />
 
         
         </>

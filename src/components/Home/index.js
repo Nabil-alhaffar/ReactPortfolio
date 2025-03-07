@@ -13,11 +13,7 @@ const Home =()=>{
     const lastNameArray = ['A','l','h','a','f','f','a','r',',']
     const jobArray = ['F','u','l','l', '-', 's','t','a','c','k', ' ', 'D','e','v','e','l','o','p','e','r','.']
     
-    // useEffect(()=> {
-    //     return setTimeout(()=>{
-    //         setLetterClass('text-animate-hover')
-    //     },4000)
-    // }, [])
+   
     useEffect(() => {
         // Set the timeout and store the timer ID
         const timerId = setTimeout(() => {
