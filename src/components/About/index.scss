@@ -18,22 +18,26 @@
 .stage-cube-cont {
     width: 50%;
     height: 100%;
-    top: 0;
+    top: 0px;
     padding-top: 18%;
     margin-left: 0;
     position: absolute;
     right: 0;
     overflow: visible;
-    
+ 
   }
   .stars{
-    height: 120%;
-    top: 25%;
+    display: relative;
+    padding-bottom: 10px;
     width: 100%;
+    left: -40px;
+    top: -35px;
     z-index: 2; /* Ensure it's above the cube */
-    position: absolute;
+    position: relative;
+    overflow: visible;
 
   }
+ 
   .cubespinner {
     animation-name: spincube;
     animation-timing-function: ease-in-out;
@@ -106,8 +110,50 @@
       transform: rotateX(90deg);
     }
   }
-  
-  
+
+ 
+  // @media screen and (max-height: 650px) {
+  //   .stars{
+  //     left: -150px;
+  //     top: 25px;
+  //   }
+  // }
+  // @media screen and (max-height: 825px) {
+  //   .stars{
+  //     left: -100px;
+  //     top: 10px;
+  //   }
+  // }
+  @media screen and (max-height: 770px) {
+    .stars{
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1680px) {
+    .stars{
+      left: 25px;
+    }
+  }
+  @media screen and (max-width: 1580px) {
+    .stars{
+      left: 0px;
+    }
+  }
+  @media screen and (max-width: 1480px) {
+    .stars{
+      left: 35px;
+    }
+  }
+  @media screen and (max-width: 1380px) {
+    .stars{
+      left: 60px;
+    }
+  }
+  @media screen and (max-width: 1270px) {
+    .stars{
+      left: 80px;
+    }
+  }
 
   @media screen and (max-width: 1200px) {
     .about-page{
@@ -136,8 +182,9 @@
     }
     .stars{
       display: none;
+      position: initial;
       width: 100%;
-      overflow: hidden;
+      overflow: visible;
     }
     
     

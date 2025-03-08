@@ -23,12 +23,12 @@ const FallingStars = () => {
 
     // Create stars with varying sizes
     const stars = [];
-    const numStars = 1200; // Number of stars
+    const numStars = 3200; // Number of stars
     const starSizes = new Float32Array(numStars); // Array to store star sizes
 
     for (let i = 0; i < numStars; i++) {
       const star = new THREE.Vector3(
-        (Math.random() - 2) * 2, // Randomize x position within smaller range
+        (Math.random() -2) * 2, // Randomize x position within smaller range
         Math.random() * 3 + 1, // Randomize y position within visible range, starting higher
         (Math.random() - 0.5) * 2 // Randomize z position within smaller range
       );
@@ -116,6 +116,7 @@ const FallingStars = () => {
 
   return (
     <div 
+      className="stars"
       ref={containerRef}
       style={{ width: '100%', height: '100%', backgroundColor: 'transparent' }}
     />
