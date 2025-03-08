@@ -70,6 +70,8 @@
         }
 
         .btn {
+            display: block;
+            align-self: center;
             margin-top: 30px;
             margin-bottom: 10px;
             padding: 0 23px;
@@ -132,7 +134,7 @@
             height: 200px;
             max-width: calc(50% - 10px);
             .title{
-                font-size: 10px;
+                font-size: 16px;
                 font-weight: bolder;
                 line-height: 20px;
                 color: #ffd700;
@@ -146,13 +148,13 @@
 
             }
             .description{
-                font-size: 8px;
+                font-size: 10px;
                 font-weight: bold;
                 margin-right: 12px;
 
             }
             .btn{
-                font-size: 7px;
+                font-size: 10px;
                 font-weight: 800;
                 width: fit-content;
                 padding-right: 10px;
@@ -163,11 +165,32 @@
 }
 @media screen and (max-width: 800px) {
    
-    // .container.portfolio-page .image-box .btn::after {
-    //     content: "VIEW";
-    // }
-    // .container.portfolio-page .image-box .btn {
-    //     content: ""; /* Hides existing text */
-    // }
+    .container.portfolio-page{
+      
+
+
+        .image-box{
+
+            .title{
+                font-size: 12px;
+
+
+                
+            }
+
+            .description{
+                font-size: 10px;
+
+
+            }
+            .btn{
+                font-size: 8px;
+                font-weight: 800;
+                width: fit-content;
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+        }
+    }
     
 }
