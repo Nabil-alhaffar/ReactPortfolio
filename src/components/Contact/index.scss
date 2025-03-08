@@ -29,14 +29,25 @@
             }
         }
     }
+    input[type='text']::placeholder,
+    input[type='email']::placeholder,
+    textarea::placeholder {
+    color: #fff; /* Placeholder text color */
+    opacity: 0.8; /* Optional: Adjust opacity */
+    font-size: 12px; 
+        font-weight: 700;
+        letter-spacing: 0.1em;
+}
     input[type= 'text'],
     input[type= 'email' ] {
         width: 100%;
         border:0;
         background: #115173;
         height: 50px;
-        font-size: 16px; 
-        color: #fff;
+        font-size: 12px; 
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        color: #ffd700;
         padding: 0 20px;
         box-sizing: border-box;
     }
@@ -45,8 +56,11 @@
         border: 0;
         background: #115173;
         height: 50px;
-        font-size: 16px;
-        color: #fff;
+        letter-spacing: 0.1em;
+        font-size: 12px;
+        font-weight: 700;
+
+        color: #ffd700;
         padding: 20px;
         min-height: 150px;
         box-sizing: border-box;

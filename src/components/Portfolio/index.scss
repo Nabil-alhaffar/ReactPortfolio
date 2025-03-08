@@ -152,7 +152,7 @@
 
             }
             .btn{
-                font-size: 6px;
+                font-size: 7px;
                 font-weight: 800;
                 width: fit-content;
                 padding-right: 10px;
@@ -162,9 +162,12 @@
     }
 }
 @media screen and (max-width: 800px) {
-    .image-box{
-        .btn{
-            font-size: 4px;
-        }
-    }
+   
+    // .container.portfolio-page .image-box .btn::after {
+    //     content: "VIEW";
+    // }
+    // .container.portfolio-page .image-box .btn {
+    //     content: ""; /* Hides existing text */
+    // }
+    
 }

@@ -24,6 +24,7 @@ const Portfolio = ()=> {
         console.log(querySnapshot);
         setPortfolio(querySnapshot.docs.map((doc)=>doc.data()))
     }
+  
     console.log(portfolio);
     const renderPortfolio = (portfolio) => {
         return (
@@ -42,7 +43,7 @@ const Portfolio = ()=> {
                                     <button
                                         className="btn"
                                         onClick={() => window.open(port.url)}
-                                    >View on Github</button>
+                                    >View Code</button>
                                 </div>
                             </div>
                         )
