@@ -25,21 +25,49 @@
 }
 .tagcloud{
     display: inline-block;
-    // top:0;
-    // left: 0;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     letter-spacing: 0.0625em;
     font-size: 1.3em;
-
+    
+    // Performance optimizations
+    will-change: transform;
+    transform: translateZ(0); // Force hardware acceleration
+    
+    // Responsive sizing
+    @media screen and (max-width: 768px) {
+        font-size: 1.1em;
+    }
+    
+    @media screen and (max-width: 480px) {
+        font-size: 1em;
+    }
 }
+
 .tagcloud--item{
     color: bisque;
-    // color: #72A8A1;
     text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    
+    // Performance optimizations
+    will-change: transform, color;
+    
+    // Active state styling
+    &.tagcloud--item-active {
+        color: #ffd700;
+        transform: scale(1.1);
+    }
+    
+    &.tagcloud--item-inactive {
+        color: bisque;
+        transform: scale(1);
+    }
 }
+
 .tagcloud--item:hover{
-    color:#fdd700;
+    color: #ffd700;
+    transform: scale(1.05);
 }
 .flat-button{
     color: #ffd700;

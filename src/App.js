@@ -8,7 +8,8 @@ import Portfolio from './components/Portfolio';
 import Dashboard from './components/Dashboard';
 import Skills from './components/Skills';
 import Blog from './components/Blog';
-import BlogDashboard from './components/BlogDashboard'
+import BlogDashboard from './components/BlogDashboard';
+import PerformanceMonitor from './components/PerformanceMonitor';
 function App() {
   return (
    <>
@@ -25,6 +26,7 @@ function App() {
           <Route path='skills' index element= {<Skills/>}/> 
         </Route>
     </Routes>
+    <PerformanceMonitor />
    </>
   );
 }

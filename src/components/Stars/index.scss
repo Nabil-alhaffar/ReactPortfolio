@@ -1,15 +1,65 @@
-// Define styles for the stars
-.star {
+.stars-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  
+  // Performance optimizations
+  will-change: transform;
+  transform: translateZ(0); // Force hardware acceleration
+  
+  // Fade effect at edges
+  &::before {
+    content: '';
     position: absolute;
-    width: 2px;
-    height: 2px;
-    background-color: #ffd700;
-    // background-color: #ffffff;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); // Add a shadow effect
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+      ellipse at center,
+      transparent 0%,
+      transparent 30%,
+      rgba(0, 0, 0, 0.1) 70%,
+      rgba(0, 0, 0, 0.3) 100%
+    );
+    pointer-events: none;
+    z-index: 1;
   }
-  @media screen and (max-width:800px) {
-     .falling-stars {
-      display: none; /* Hide on smaller screens */
-    }
-    
+}
+
+// Responsive optimizations
+@media screen and (max-width: 768px) {
+  .stars-container {
+    // Reduce complexity on mobile
+    opacity: 0.6;
   }
+}
+
+@media screen and (max-width: 480px) {
+  .stars-container {
+    // Further reduce on very small screens
+    opacity: 0.4;
+  }
+}
+
+// High DPI displays
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .stars-container {
+    // Slightly reduce opacity on high DPI to prevent overwhelming
+    opacity: 0.8;
+  }
+}
+
+// Reduced motion preference
+@media (prefers-reduced-motion: reduce) {
+  .stars-container {
+    // Disable animations for users who prefer reduced motion
+    animation: none !important;
+    transform: none !important;
+  }
+}

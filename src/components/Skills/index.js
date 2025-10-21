@@ -33,44 +33,48 @@ const Skills = ()=>{
     }, []);
 
     useEffect(()=>{
-    //   return()=> {
         const container = ".tagcloud"
-        const texts = [
-            "ASP.NET",
-            "ASP.NET Core",
-            "C#",
-            "Angular",
-            "React",
-            "C/C++",
-            "OAuth",
-            "Azure",
-            "AWS",
-            "JWT",
-            "Python",
-            "SQL",
-            "NoSQL",
-            "APIs",
-            "CI/CD",
-            "TypeScript",
-            "NodeJS",
-            "JavaScript",
-            "CSS",
-            "Tailwind",
-            "HTML",
-            "Xamarin",
-            "Vue",
-            "Git",
-            "SQL",
-            "NoSQL"
-        ];
-        const options = {
-            radius:300,
-            maxSpeed: "fast",
-            initSpeed: "normal",
-            keep:true,
-        };
-        TagCloud(container,texts,options);
         
+        // Optimized skill list - removed duplicates and organized by importance
+        const texts = [
+            "C#", "ASP.NET", "ASP.NET Core", "React", "Angular", "JavaScript",
+            "TypeScript", "NodeJS", "Python", "SQL", "NoSQL", "Azure", "AWS",
+            "Git", "CI/CD", "APIs", "OAuth", "JWT", "CSS", "HTML", "Tailwind",
+            "Xamarin", "Vue", "C/C++"
+        ];
+        
+        // Performance-optimized options
+        const options = {
+            radius: window.innerWidth <= 768 ? 200 : 300, // Responsive radius
+            maxSpeed: "normal", // Reduced from "fast" for better performance
+            initSpeed: "slow", // Slower initial animation
+            keep: true,
+            // Performance optimizations
+            activeClass: "tagcloud--item-active",
+            inactiveClass: "tagcloud--item-inactive",
+            // Reduce animation complexity
+            direction: 135,
+            // Mobile optimizations
+            ...(window.innerWidth <= 768 && {
+                maxSpeed: "slow",
+                initSpeed: "slow"
+            })
+        };
+        
+        // Initialize with error handling
+        try {
+            TagCloud(container, texts, options);
+        } catch (error) {
+            console.warn('TagCloud initialization failed:', error);
+        }
+        
+        // Cleanup function
+        return () => {
+            const tagCloudElement = document.querySelector(container);
+            if (tagCloudElement) {
+                tagCloudElement.innerHTML = '';
+            }
+        };
     }, []);
     return (
         <>
