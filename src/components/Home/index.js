@@ -59,11 +59,11 @@ const Home =()=>{
             <h2>.NET and Mobile Expert / Freelancer / Inventor</h2>
             <Link to="/contact" className='flat-button' >Contact Me</Link>
             <div className='image-container'>
-                <LazyImage 
+                <img 
                     className='pic' 
                     src={profilePic} 
                     alt='Nabil Alhaffar - Full Stack Developer'
-                    placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23f0f0f0'/%3E%3C/svg%3E"
+                    loading="eager"
                 />
             </div>  
             </div>
