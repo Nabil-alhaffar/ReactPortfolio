@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap');
+
+.skills-page {
+    background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 50%, #0f0f0f 100%);
+    min-height: 100vh;
+    position: relative;
+}
+
 .yspan{
-    color: #fdd700;
+    color: #ffd700;
     font-weight: 900;
 }
 
@@ -11,16 +18,17 @@
     position: relative;
     top: 110px;
     left: 60px;
+    background: transparent;
 }
 .text-sphere{
     position: absolute;
     top: 0;
     width: 100%;
     height: 100vh;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // background: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
 
 }
 .tagcloud{
@@ -45,47 +53,71 @@
 }
 
 .tagcloud--item{
-    color: bisque;
+    color: #ffd700;
     text-transform: uppercase;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     cursor: pointer;
+    text-shadow: 0 0 4px rgba(255, 215, 0, 0.3);
     
     // Performance optimizations
     will-change: transform, color;
     
     // Active state styling
     &.tagcloud--item-active {
-        color: #ffd700;
-        transform: scale(1.1);
+        color: #ffed4e;
+        transform: scale(1.15);
+        text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+        filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.4));
     }
     
     &.tagcloud--item-inactive {
-        color: bisque;
+        color: #ffd700;
         transform: scale(1);
+        text-shadow: 0 0 4px rgba(255, 215, 0, 0.3);
     }
 }
 
 .tagcloud--item:hover{
-    color: #ffd700;
-    transform: scale(1.05);
+    color: #ffed4e;
+    transform: scale(1.1);
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.4));
 }
 .flat-button{
     color: #ffd700;
-    // display: block;
     background: 0 0;
     font: 11px;
     letter-spacing: 3px;
     text-decoration: none;
-    padding: 8px 10px;
-    border: 1px solid #ffd700;
-    // float: right;
-    border-radius: 4px;
+    padding: 12px 24px;
+    border: 2px solid #ffd700;
+    border-radius: 8px;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s 1.8s backwards;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.2), transparent);
+        transition: left 0.5s ease;
+    }
+    
     &:hover{
         background: #ffd700;
         color: #333;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+        
+        &::before {
+            left: 100%;
+        }
     }
-    animation: fadeIn 1s 1.8s backwards;
-
 }
 @media screen and (max-width: 1200px) {
 

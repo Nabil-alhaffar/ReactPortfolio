@@ -63,9 +63,9 @@ const About = ()=>{
   Upon graduating, I continued working in sales while transitioning into 
   <span className='yspan'> software freelancing</span>, which has been my primary focus for a few years now 
   and provided me with an opportunity to be flexible while I fulfilled my other obligations. 
-  Along the journey, I also had to navigate the complex process of seeking asylum and permanent residence in the U.S., 
+  Along the journey and over the course of eight years, I had to navigate the complex process of seeking asylum and permanent residence in the U.S., 
   which, though challenging, reinforced my <span className='yspan'>resilience</span> and 
-  <span className='yspan'> determination</span> to carve out my own path.
+  <span className='yspan'> determination</span> to carve out my own path. In July 2025, I finally took the oath and was naturalized in Los Angeles!
 </p>
 
 

@@ -82,23 +82,24 @@ const Contact= ()=> {
                 </div>
 
             </div>
-        </div>
-        <div className='info-map'>
-        Nabil Alhaffar
-        <br/>
-        N Doheny Dr
-        <br/>
-        West Hollywood, CA 90048<br/>
-        <span>Nabil.Alhaffar1@gmail.com</span>
-        </div>
-        <div className='map-wrap'>
-            <MapContainer center={[ 34.07589, -118.390027 ]} zoom ={12}>
-                <TileLayer url = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                <Marker position ={[34.07589, -118.390027 ]}>
-                    <Popup>Nabil lives here, come over for a cup of coffee :- </Popup>
-                </Marker>
+            
+            <div className='info-map'>
+                Nabil Alhaffar
+                <br/>
+                N Doheny Dr
+                <br/>
+                West Hollywood, CA 90048<br/>
+                <span>Nabil.Alhaffar1@gmail.com</span>
+            </div>
+            <div className='map-wrap'>
+                <MapContainer center={[ 34.07589, -118.390027 ]} zoom ={12}>
+                    <TileLayer url = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                    <Marker position ={[34.07589, -118.390027 ]}>
+                        <Popup>Nabil lives here, come over for a cup of coffee :- </Popup>
+                    </Marker>
 
-            </MapContainer>
+                </MapContainer>
+            </div>
         </div>
         <Loader type="pacman"/>
         </>

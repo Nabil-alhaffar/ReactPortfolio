@@ -1,11 +1,13 @@
 .nav-bar {
-    background: #181818;
+    background: linear-gradient(180deg, #0c0c0c 0%, #1a1a1a 50%, #0f0f0f 100%);
     width: 65px;
     height: 100%;
     position: absolute;
     top: 0;
     z-index: 3;
     min-height: 500px;
+    border-right: 1px solid rgba(255, 215, 0, 0.2);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
   
     .logo {
       display: block;
