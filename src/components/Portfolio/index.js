@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import { getDocs, collection } from 'firebase/firestore/lite'
 import { db } from '../../firebase';
+import LazyImage from '../LazyImage';
 const Portfolio = ()=> {
     const [letterClass, setLetterClass]= useState('text-animate');
     const [portfolio, setPortfolio]= useState([])
@@ -24,6 +25,7 @@ const Portfolio = ()=> {
         console.log(querySnapshot);
         setPortfolio(querySnapshot.docs.map((doc)=>doc.data()))
     }
+  
     console.log(portfolio);
     const renderPortfolio = (portfolio) => {
         return (
@@ -32,17 +34,19 @@ const Portfolio = ()=> {
                     portfolio.map((port, idx) => {
                         return (
                             <div className="image-box" key={idx}>
-                                <img 
-                                src={port.image}
-                                className="portfolio-image"
-                                alt="portfolio" />
+                                <LazyImage 
+                                    src={port.image}
+                                    className="portfolio-image"
+                                    alt={`${port.name} - Portfolio Project`}
+                                    placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f0f0f0'/%3E%3C/svg%3E"
+                                />
                                 <div className="content">
                                     <p className="title">{port.name}</p>
                                     <h4 className="description">{port.description}</h4>
                                     <button
                                         className="btn"
                                         onClick={() => window.open(port.url)}
-                                    >View on Github</button>
+                                    >View Code</button>
                                 </div>
                             </div>
                         )

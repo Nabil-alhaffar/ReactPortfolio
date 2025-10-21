@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap');
-
-.skills-page{
-    position: absolute;
-    
+.yspan{
+    color: #fdd700;
+    font-weight: 900;
 }
+
 .sphere-container{
     width: 50%;
     float: right;
     height: 100%;
     position: relative;
-    top: 80px;
+    top: 110px;
     left: 60px;
 }
 .text-sphere{
@@ -25,20 +25,49 @@
 }
 .tagcloud{
     display: inline-block;
-    // top:0;
-    // left: 0;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     letter-spacing: 0.0625em;
     font-size: 1.3em;
-
+    
+    // Performance optimizations
+    will-change: transform;
+    transform: translateZ(0); // Force hardware acceleration
+    
+    // Responsive sizing
+    @media screen and (max-width: 768px) {
+        font-size: 1.1em;
+    }
+    
+    @media screen and (max-width: 480px) {
+        font-size: 1em;
+    }
 }
+
 .tagcloud--item{
     color: bisque;
     text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    
+    // Performance optimizations
+    will-change: transform, color;
+    
+    // Active state styling
+    &.tagcloud--item-active {
+        color: #ffd700;
+        transform: scale(1.1);
+    }
+    
+    &.tagcloud--item-inactive {
+        color: bisque;
+        transform: scale(1);
+    }
 }
+
 .tagcloud--item:hover{
-    color:#fdd700;
+    color: #ffd700;
+    transform: scale(1.05);
 }
 .flat-button{
     color: #ffd700;
@@ -59,13 +88,95 @@
 
 }
 @media screen and (max-width: 1200px) {
+
+    
+
+    .container.skills-page{
+
+       
+        h1.page-title{
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 45px;
+        }
+        .text-zone{
+            position: initial;
+            width: 100%;
+            transform: none;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .flat-button{
+            float: none;
+            display: block;
+            margin: 20px auto 0 auto;
+            width: fit-content;
+
+        }
+    }
+    .sphere-container{
+        float: none;
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+        overflow: visible;
+        position: initial;
+
+        // display: none;
+
+    }
+    
+    .text-sphere{
+        float: none;
+        width: 100%;
+        height: 400px;
+        margin: 0;
+        position: initial;
+        justify-self: center;
+        align-self: center;
+        // display: none;
+        margin: 0 auto; /* Centers horizontally */
+
+
+    }
+    .tagcloud{
+        // display: none;
+        float: none;
+        width: 100%;
+        height: 400px;
+        margin: 0;
+        position: initial;
+    }
+    
+    
+}
+@media screen and (max-width:800px) {
+
     .sphere-container{
         float: none;
         width: 100%;
         height: 400px;
         margin: 0;
+        overflow:hidden;
+        position: initial;
+        display: none;
 
     }
     
-    
+    .text-sphere{
+        float: none;
+        width: 100%;
+        height: 400px;
+        margin: 0;
+        position: initial;
+        display: none;
+    }
+    .tagcloud{
+        display: none;
+        float: none;
+        width: 100%;
+        height: 400px;
+        margin: 0;
+        position: initial;
+    }
 }

@@ -86,16 +86,15 @@ const Contact= ()=> {
         <div className='info-map'>
         Nabil Alhaffar
         <br/>
-        S Lake St
+        N Doheny Dr
         <br/>
-        Los Angeles, CA<br/>
-        90057<br/>
-        <span>nabil.alhaffar1@gmail.com</span>
+        West Hollywood, CA 90048<br/>
+        <span>Nabil.Alhaffar1@gmail.com</span>
         </div>
         <div className='map-wrap'>
-            <MapContainer center={[ 34.0622, -118.2742 ]} zoom ={12}>
+            <MapContainer center={[ 34.07589, -118.390027 ]} zoom ={12}>
                 <TileLayer url = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                <Marker position ={[34.0622, -118.2742 ]}>
+                <Marker position ={[34.07589, -118.390027 ]}>
                     <Popup>Nabil lives here, come over for a cup of coffee :- </Popup>
                 </Marker>
 

@@ -38,7 +38,9 @@
             position: absolute;
             width: 100%;
             z-index: 3;
-            padding: 10px 20px;
+            padding: 10px 10px 10px 10px;
+            letter-spacing: 0.10em;
+
             transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
             background: linear-gradient(
                 180deg,
@@ -51,13 +53,16 @@
         .title {
             margin-bottom: 0;
             margin-top: 0;
-            color: #fff;
+            margin-right: 13px;
+
+            color: #ffd700;
             font-size: 24px;
             font-weight: 500;
             line-height: 24px;
         }
 
         .description {
+            margin-right: 13px;
             font-size: 14px;
             margin-bottom: 5px;
             color: #fff;
@@ -65,6 +70,8 @@
         }
 
         .btn {
+            display: block;
+            align-self: center;
             margin-top: 30px;
             margin-bottom: 10px;
             padding: 0 23px;
@@ -118,6 +125,7 @@
         padding: 20px;
         box-sizing: border-box;
 
+
         h1.page-title{
             margin-left: 20px;
             margin-top: 20px;
@@ -125,6 +133,64 @@
         .image-box{
             height: 200px;
             max-width: calc(50% - 10px);
+            .title{
+                font-size: 16px;
+                font-weight: bolder;
+                line-height: 20px;
+                color: #ffd700;
+                margin-right: 13px;
+
+                
+            }
+            .content{
+                padding: 2px 6 px;
+                // letter-spacing: 0.10em;
+
+            }
+            .description{
+                font-size: 10px;
+                font-weight: bold;
+                margin-right: 12px;
+
+            }
+            .btn{
+                font-size: 10px;
+                font-weight: 800;
+                width: fit-content;
+                padding-right: 10px;
+                padding-left: 10px;
+            }
         }
     }
+}
+@media screen and (max-width: 800px) {
+   
+    .container.portfolio-page{
+      
+
+
+        .image-box{
+
+            .title{
+                font-size: 8px;
+                font-weight: 900;
+                
+                
+            }
+
+            .description{
+                font-size: 7px;
+
+
+            }
+            .btn{
+                font-size: 8px;
+                font-weight: 800;
+                width: fit-content;
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+        }
+    }
+    
 }
