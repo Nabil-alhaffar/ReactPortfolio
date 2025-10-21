@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 // import Logo from './Logo';
 import Loader from 'react-loaders';
 import profilePic from '../../assets/images/portfolioPic.png'
+import LazyImage from '../LazyImage';
 import './index.scss'
 const Home =()=>{
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -58,7 +59,12 @@ const Home =()=>{
             <h2>.NET and Mobile Expert / Freelancer / Inventor</h2>
             <Link to="/contact" className='flat-button' >Contact Me</Link>
             <div className='image-container'>
-                <img className='pic' src={profilePic} clipPath='circle' alt='logo'></img>
+                <LazyImage 
+                    className='pic' 
+                    src={profilePic} 
+                    alt='Nabil Alhaffar - Full Stack Developer'
+                    placeholder="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23f0f0f0'/%3E%3C/svg%3E"
+                />
             </div>  
             </div>
               

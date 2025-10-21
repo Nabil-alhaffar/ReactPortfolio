@@ -6,6 +6,7 @@ import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fort
 import Loader from 'react-loaders'
 import Stars from '../Stars'
 import { Link } from 'react-router-dom'
+import ProfessionalSummary from '../ProfessionalSummary'
 
 const About = ()=>{
 
@@ -36,6 +37,7 @@ const About = ()=>{
                     />
 
                 </h1>
+                <ProfessionalSummary />
                 <p>
   My journey began in Damascus, Syria, where I grew up in a close-knit family. 
   As a child, I was always <span className='yspan'>curious</span>, constantly asking questions and exploring new interests. 

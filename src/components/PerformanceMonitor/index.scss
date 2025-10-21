@@ -1,0 +1,30 @@
+.performance-monitor {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  z-index: 9999;
+  display: flex;
+  gap: 15px;
+  
+  .metric {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .label {
+      color: #ccc;
+      font-size: 10px;
+    }
+    
+    .value {
+      color: #ffd700;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+}
